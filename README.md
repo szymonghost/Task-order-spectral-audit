@@ -14,6 +14,6 @@ python -m pytest -q tests/core
 
 The package contains only scalar arrays with the keys `permutations`, `values`, and `seeds`. It contains no image datasets, model checkpoints, model-training code, training logs, or raw examples. Reproducing the audit does not retrain the continual-learning models.
 
-The manuscript is compile-ready from `paper.tex`, `references.bib`, `neurips_2026.sty`, and `figures/`. Its camera-ready artifact citation points to the archived anonymous review copy; this public repository is a separate, named release of the same research artifact. The reference audit bundles live under `reference_outputs/spectral_audit/`; `claim_data/` is the manuscript-facing snapshot checked by `verify_claims.py`. Every release member other than `SUPPLEMENT_MANIFEST.sha256` is bound by that deterministic top-level manifest.
+The manuscript is compile-ready from `paper.tex`, `references.bib`, `neurips_2026.sty`, and `figures/`. Its artifact citation points to this public repository. The reference audit bundles live under `reference_outputs/spectral_audit/`; `claim_data/` is the manuscript-facing snapshot checked by `verify_claims.py`. Every release member other than `SUPPLEMENT_MANIFEST.sha256` is bound by that deterministic top-level manifest.
 
 The BSD 3-Clause License in `LICENSE` applies to the original software and package documentation. It does not relicense the manuscript, generated research artifacts, third-party dependencies, or upstream datasets.

@@ -227,7 +227,7 @@ Finally, spectral blocks describe structure in curriculum space, not causal mech
 A complete task-order experiment is a repeated function on $S_K$. The proposed audit converts it into two outputs that curriculum studies often conflate: approximation strength and exact structural support. In the two primary forgetting landscapes, degree at most two captures most reproducible signal but is not exactly sufficient. An exploratory drill-down shows how a selected part of the remainder can be localized without elevating it into a universal mechanism. The durable contribution is a seed-aware, provenance-validated method for determining what order-effect models can and cannot represent exactly.
 
 \section*{Acknowledgments}
-I thank Adam Wróbel for his mentorship, which helped me develop my research skills, and Prof. Bartosz Zieli{\fontencoding{OT1}\selectfont\'{n}}ski for making this mentorship possible.
+I thank Adam Wróbel for his mentorship, which helped me develop my research skills, and Prof. Bartosz Zieli{\fontencoding{OT1}\selectfont\'{n}}ski for making this mentorship possible. I am also grateful to Kacper \'{C}iaston and Agnieszka Szurman for their encouragement and support throughout this project.
 
 \clearpage
 \bibliographystyle{plainnat}
@@ -297,7 +297,7 @@ The sign statistic is the squared norm of the signed seed mean after concatenati
 
 \section{Reproducibility and artifact scope}
 
-The numerical audit environment records Python 3.14.6 and NumPy 2.4.4. The supporting artifact is available at \href{https://anonymous.4open.science/r/taskorder-spectral-audit-C3D1}{browse repository or download ZIP}. It contains the manuscript, bibliography, unmodified NeurIPS style, figure assets, validated claim CSVs, exact build instructions, the BSD-3-Clause package source, focused tests, benchmark CSVs, and scalar landscape arrays. It excludes raw MNIST or Fashion-MNIST archives, training logs, historical drafts, cache files, and machine-specific paths. A SHA-256 manifest binds every packaged member, while separate claim and package verifiers check the displayed values, provenance chains, and release surface.
+The numerical audit environment records Python 3.14.6 and NumPy 2.4.4. The supporting artifact is available at \href{https://github.com/szymonghost/Task-order-spectral-audit}{the public repository}. It contains the manuscript, bibliography, unmodified NeurIPS style, figure assets, validated claim CSVs, exact build instructions, the BSD-3-Clause package source, focused tests, benchmark CSVs, and scalar landscape arrays. It excludes raw MNIST or Fashion-MNIST archives, training logs, historical drafts, cache files, and machine-specific paths. A SHA-256 manifest binds every packaged member, while separate claim and package verifiers check the displayed values, provenance chains, and release surface.
 
 Training all $K!$ curricula is not reproduced by the audit package. Existing training records describe tasks, architecture, optimizer, seeds, shuffle behavior, and the forgetting response, but do not establish bitwise reproducibility across numerical-library builds or GPU kernels. The $K=7$ metadata limitation described in the main text is retained in the repository documentation.
 

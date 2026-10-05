@@ -337,10 +337,13 @@ def main() -> None:
     verify_benchmark(text)
     verify_citations(text)
     verify_assets()
+    public_link = r"\href{https://github.com/szymonghost/Task-order-spectral-audit}{the public repository}"
+    if text.count(public_link) != 1 or text.lower().count("github.com") != 1:
+        raise RuntimeError("public artifact link is missing, duplicated, or inconsistent")
     forbidden_tokens = (
         "pre" + "register",
         "pre" + "specified",
-        "git" + "hub.com",
+        "anonymous.4open.science",
         "one" + "drive",
         "c:" + "\\Users\\",
         "/" + "home/",
