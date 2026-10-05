@@ -1,0 +1,5 @@
+K,partition,d,M,top1_frac,top2_frac,top3_frac,eff_rank,eff_rank_boot_2_5,eff_rank_boot_50,eff_rank_boot_97_5,source_artifact_relative_path,source_artifact_sha256,analysis_version
+5,"(2, 2, 1)",5,10,0.781943,0.944039,0.998631,1.5608,1.3996,1.5868,1.8052,results/first_order_forgetting/perm_results.npz,e5ba389cb4213c6bbb35ad29f878c42c7a5ea3ae0ea8015510576ce802056392,hookshape_svd_seed_bootstrap_schema_v2
+6,"(3, 2, 1)",16,10,0.656363,0.802681,0.880318,2.1711,2.0099,2.4883,3.2986,results/first_order_forgetting_s6_10seed/perm_results.npz,f529b0718b84516c45bfe856e03a4d72567ae5a1834d86cfecc9468e1b527096,hookshape_svd_seed_bootstrap_schema_v2
+5,"(3, 2)",5,10,0.915160,0.981825,0.997415,1.1874,1.1410,1.1960,1.2986,results/first_order_forgetting/perm_results.npz,e5ba389cb4213c6bbb35ad29f878c42c7a5ea3ae0ea8015510576ce802056392,hookshape_svd_seed_bootstrap_schema_v2
+6,"(4, 2)",9,10,0.804071,0.925656,0.974481,1.5060,1.3495,1.5706,1.9211,results/first_order_forgetting_s6_10seed/perm_results.npz,f529b0718b84516c45bfe856e03a4d72567ae5a1834d86cfecc9468e1b527096,hookshape_svd_seed_bootstrap_schema_v2

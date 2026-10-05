@@ -1,0 +1,101 @@
+{
+  "analysis_version": "taskorder_spectral_audit_v2",
+  "config": {
+    "allocation_targets": [
+      [
+        2,
+        2,
+        1
+      ]
+    ],
+    "confidence": 0.95,
+    "descriptive_only": false,
+    "high_order_min": 3,
+    "max_exact_seeds": 16,
+    "monte_carlo_signs": 20000,
+    "random_seed": 20260524
+  },
+  "diagnostics": {
+    "analysis_mode": "seed_aware_inference",
+    "analysis_version": "taskorder_spectral_audit_v2",
+    "burnside_expected": 120,
+    "burnside_sum_d2": 120,
+    "direct_nontrivial_plugin": 0.030393162413981076,
+    "direct_plugin_total": 0.16922806871790694,
+    "nontrivial_parseval_absolute_error": 1.0408340855860843e-17,
+    "parseval_passed": true,
+    "parseval_tolerance": 1e-10,
+    "per_seed_parseval_max_absolute_error": 5.551115123125783e-17,
+    "plugin_parseval_absolute_error": 2.7755575615628914e-17,
+    "seed_inference_available": true,
+    "seed_inference_status": "available",
+    "spectral_nontrivial_plugin": 0.030393162413981066,
+    "spectral_plugin_total": 0.1692280687179069
+  },
+  "implementation_sha256": {
+    "__init__.py": "c3ca96822ab0f44ee3665ef763b22edfe22d7a56339b703679971f78e11c1d58",
+    "__main__.py": "f485a6cb83be3bd54a665e637eddcd00d467d1977e671dba6c829912d8ab58f2",
+    "allocation.py": "1f75d038bfc4ce5b533466bd212437f2cb09396d80e3e09c900a29c94db78618",
+    "audit.py": "f090e3addfa3bb6b5d1df4b2a94c48d3c4eb5f2288cbf68838b120187e25fb12",
+    "cli.py": "393277015811127f8ea6806a7f767749463ebc4d20473c2270cc8c149113470d",
+    "inference.py": "9dd84f1c568f630c539a1c8b59dd6829525534266a79ca9eb1ec24fcfda1309a",
+    "io.py": "3940b977ed991b353c86ea1b3378bd3d745cc0b549cadbc18815f22f37d819f8",
+    "irreps.py": "1d07e0f60d40f2a6d65b6ed64b876fcbdd61f8bd1f8a85a80ba85c3f22f96f00",
+    "schema.py": "772cddf6d256e22310cedab671cdc09ea06b91c9c7b4fe5d896ab47cf918f1dc"
+  },
+  "input": {
+    "K": 5,
+    "canonical_permutation_order": "lexicographic",
+    "canonical_values_layout": "group-by-seed",
+    "group_order": 120,
+    "input_values_layout": "group-by-seed",
+    "n_seeds": 10,
+    "path": "k5_landscape.npz",
+    "path_scope": "basename_only",
+    "permutations_key": "permutations",
+    "seed_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seeds_key": "seeds",
+    "sha256": "953ef62c93e13ebb17e7c69f0237e2adf9a25bbd9b39dc48822a068b0c95c5f5",
+    "values_key": "values"
+  },
+  "outputs": {
+    "high_order_summary.csv": {
+      "bytes": 1096,
+      "rows": 1,
+      "sha256": "b9af29d60e7e912d7650c86001ba1944b757752a8b86438dc0575015bf7fdbb9"
+    },
+    "order_spectrum.csv": {
+      "bytes": 2279,
+      "rows": 5,
+      "sha256": "4b33e9d805806beef8de0a69530fc5ab93d696f742c018fc263527f867cb94a1"
+    },
+    "partition_spectrum.csv": {
+      "bytes": 3321,
+      "rows": 7,
+      "sha256": "1b95088e2799a1df21b2340723a0fdb252dd40cfe0b21729a2a175b6a1adff3b"
+    },
+    "within_order_allocation.csv": {
+      "bytes": 1813,
+      "rows": 1,
+      "sha256": "9fd1ff0a15b6aab063c86a4a86ae52f3186ed19c77923ea9cc5fe5108e2444a0"
+    }
+  },
+  "package_version": "0.2.0",
+  "publication_protocol": "manifest_written_after_atomic_csv_bundle_v1",
+  "runtime": {
+    "numpy": "2.4.4",
+    "python": "3.14.6"
+  },
+  "schema_version": 2
+}
