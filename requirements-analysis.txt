@@ -1,0 +1,7 @@
+# Minimal checked environment for the packaged audit, verifiers, and tests.
+# Run with the project interpreter, for example:
+#   py -3 -m pip install -r requirements-analysis.txt
+numpy==2.4.4
+matplotlib==3.11.0
+pillow==12.2.0
+pytest==9.1.1

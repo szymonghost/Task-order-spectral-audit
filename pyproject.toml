@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskorder-spectral"
+version = "0.2.0"
+description = "Seed-aware spectral audits of complete task-order landscapes"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.24"]
+
+[project.scripts]
+taskorder-spectral = "taskorder_spectral.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
